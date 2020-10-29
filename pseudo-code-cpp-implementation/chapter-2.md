@@ -1,6 +1,4 @@
-<details>
-    <summary><strong>Insertion Sort</strong></summary>
-
+##### Insertion Sort :
 ```cpp
 // sort the given array of n integers in ascending order
 void insertion_sort(vector<int> &A) {
@@ -18,12 +16,9 @@ void insertion_sort(vector<int> &A) {
 }
 ```
 > Time complexity : O(n^2) in worst case
+---
 
-</details>
-
-<details>
-    <summary><strong>Merge</strong></summary>
-
+##### Merge :
 ```cpp
 // merge two sorted subarrays A[p...q] and A[q+1...r]
 void merge(vector<int> &A, int p, int q, int r) {
@@ -53,12 +48,9 @@ void merge(vector<int> &A, int p, int q, int r) {
 }
 ```
 > Time Complexity : O(n) in worst case
+---
 
-</details>
-
-<details>
-    <summary><strong>Merge sort</strong></summary>
-
+##### Merge sort :
 ```cpp
 // sort subarray A[p...r] in ascending order
 void merge_sort(int A[], int p, int r){
@@ -70,14 +62,10 @@ void merge_sort(int A[], int p, int r){
     }
 }
 ```
-
 > Time Complexity : O(nlog(n)) in worst case
+---
 
-</details>
-
-<details>
-    <summary><strong>Bubble Sort</strong></summary>
-
+##### Bubble Sort :
 ```cpp
 // sort given array of n integers in ascending order
 void bubble_sort(vector<int> &A) {
@@ -91,7 +79,4 @@ void bubble_sort(vector<int> &A) {
     }
 }
 ```
-
 > Time Complexity  : O(n^2) in worst case
-
-</details>

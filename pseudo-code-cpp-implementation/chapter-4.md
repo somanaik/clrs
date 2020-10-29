@@ -1,6 +1,4 @@
-<details>
-    <summary><strong>Maximum Subarray (Divide and Conquer)</strong></summary>
-
+##### Maximum Subarray (Divide and Conquer) :
 ```cpp
 // The procedure find_max_crossing_subarray takes as input the array A and the
 // indices low, mid, and high, and it returns a tuple containing the indices demarcating
@@ -33,7 +31,8 @@ tuple<int,int,int> find_max_crossing_subarray(vector<int> &A, int low, int mid, 
     return make_tuple(max_left, max_right, right_sum+left_sum);
 }
 
-// it returns a tuple containing the indices of, starting and ending in order, subarray with maximum sum in A[low,...,high] 
+// it returns a tuple containing the indices of, starting and ending in order, 
+// subarray with maximum sum in A[low,...,high] 
 tuple<int,int,int> find_maximum_subarray(vector<int> &A, int low, int high) {
     if (low == high) return make_tuple(low,high,A[low]);
 
@@ -55,11 +54,9 @@ tuple<int,int,int> find_maximum_subarray(vector<int> &A, int low, int high) {
 }
 ```
 > Time complexity : O(nlog(n)) in worst case
+---
 
-</details>
-<details>
-    <summary><strong>Matrix Multiplication</strong></summary>
-
+##### Matrix Multiplication :
 ```cpp
 // standard matrix multiplication
 vector<vector<int>> matrix_multiplication(vector<vector<int>> &A, vector<vector<int>> &B) {
@@ -77,12 +74,9 @@ vector<vector<int>> matrix_multiplication(vector<vector<int>> &A, vector<vector<
 }
 ```
 > Time Complexity : O(n^3) in worst case
+---
 
-</details>
-
-<details>
-    <summary><strong>Strassen’s Matrix Multiplication(matrix size is power of 2)</strong></summary>
-
+##### Strassen’s Matrix Multiplication(matrix size is power of 2) :
 ```cpp
 // matrix addition
 vector<vector<int>> matrix_addition(vector<vector<int>> &A, vector<vector<int>> &B) {
@@ -188,7 +182,4 @@ vector<vector<int>> strassen_matrix_multiply(vector<vector<int>> &A, vector<vect
     return C;
 }
 ```
-
 > Time Complexity : O(n^2.8) in worst case
-
-</details>
