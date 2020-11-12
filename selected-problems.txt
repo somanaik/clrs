@@ -1,3 +1,4 @@
 2.3-7
 2-4 Inversions
 4.1-5
+4-6-Monge Arrays
